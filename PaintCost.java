@@ -1,4 +1,4 @@
-
+import java.util.*;
 class PaintCost {
 
 	public static void main(String[] args) {
@@ -7,34 +7,46 @@ class PaintCost {
 			 * This program will calculate the cost to paint a house
 			 */
 				
-			 int houseLengthFeet=40;
-			 System.out.println("houseLengthFeet " + (houseLengthFeet));
+			Scanner L=new Scanner(System.in);
+			
+			 System.out.println("Put in the house length");
+		
+			 int houseLengthFeet=L.nextInt();
+			 System.out.println("houseLengthFeet " + (houseLengthFeet + "\n"));
 			 
-			 int houseWidthFeet=15; 
-			 System.out.println("houseWidthFeet " + (houseWidthFeet));
+			 System.out.println("Put in the house width");
+			 int houseWidthFeet=L.nextInt(); 
+			 System.out.println("houseWidthFeet " + (houseWidthFeet + "\n"));
 			 
-			 int houseHeightFeet=25;
-			 System.out.println("houseHeightFeet " + (houseHeightFeet)); 
+			 System.out.println("Put in the house height");
+			 int houseHeightFeet=L.nextInt();
+			 System.out.println("houseHeightFeet " + (houseHeightFeet + "\n")); 
 			 
-			 int windowLengthFeet=4;
-			 System.out.println("windowLengthFeet " + (windowLengthFeet)); 
+			 System.out.println("Put in the window length");
+			 int windowLengthFeet=L.nextInt();
+			 System.out.println("windowLengthFeet " + (windowLengthFeet + "\n")); 
 			 
-			 int windowWidthFeet=2;
-			 System.out.println("windowWidthFeet " + (windowWidthFeet)); 
+			 System.out.println("Put in the window width");
+			 int windowWidthFeet=L.nextInt();
+			 System.out.println("windowWidthFeet " + (windowWidthFeet + "\n")); 
 			 
-			 int doorLengthFeet=6; 
-			 System.out.println("doorLengthFeet " + (doorLengthFeet)); 
+			 System.out.println("Put in the door length");
+			 int doorLengthFeet=L.nextInt(); 
+			 System.out.println("doorLengthFeet " + (doorLengthFeet + "\n")); 
 			 
-			 int doorWidthFeet=3; 
-			 System.out.println("doorWidthFeet " + (doorWidthFeet));
+			 System.out.println("Put in the door width");
+			 int doorWidthFeet=L.nextInt(); 
+			 System.out.println("doorWidthFeet " + (doorWidthFeet + "\n"));
 			 
-			 int numberofwindows=10;  
+			 System.out.println("Put in the number of windows");
+			 int numberofwindows=L.nextInt();  
 			 double windowArea= numberofwindows*((windowLengthFeet)*(windowWidthFeet)); 
-			 System.out.println("windowArea " + windowArea);
+			 System.out.println("windowArea " + windowArea + "\n");
 			 
-			 int numberofdoors=2; 
+			 System.out.println("Put in the number of doors");
+			 int numberofdoors=L.nextInt(); 
 			 double doorArea= numberofdoors*((doorLengthFeet)*(doorWidthFeet));
-			 System.out.println("doorArea " + doorArea);
+			 System.out.println("doorArea " + doorArea + "\n");
 			 
 			 double x = (((houseLengthFeet)*(houseWidthFeet)))*2; 
 			 System.out.println("Area of house " + (x));
